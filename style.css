@@ -1,0 +1,153 @@
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{
+    margin-left: 30px;
+    background-color: #403A3A;
+}
+.teclado--linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.teclado--botao{
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.botao--branco{
+    background-color: #FFF;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao--corrige{
+    background-color: #F09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao--confirma{
+    background-color: #48C079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.d-1{
+    flex: 1;
+    display: flex;
+}
+.d-1-esquerda{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+}
+.d-1-1,.d-1-2,.d-1-3{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2{
+    justify-content: center;
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.d-1-4{
+    flex: 1;
+    line-height: 30px;
+}
+    
+.d-1-direita{
+    width: 90px;    
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d-1-img{
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #FFF;
+}
+.d-1-img img{
+    width: 100%;
+}
+.d-1-img.pequeno{
+    width: 80%;
+    font-size: 12px;
+}
+
+.d-2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+}
+
+.aviso--grande{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+}
+
+.aviso--gigante{
+    font-size:50px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
